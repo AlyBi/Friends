@@ -1,0 +1,182 @@
+:root {
+  --accent-color: #8b0000;
+  --base-padding: 10px;
+}
+
+body {
+  background-color: #d3d3d3;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  display: inline;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+main {
+  margin: 60px 90px 60px 90px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+footer {
+  background-color: #eeeeee;
+  text-align: center;
+  padding: 50px 0 50px 0;
+}
+
+header > img {
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.container {
+  background-color: #ffffff;
+  margin: 20px 60px 20px 60px;
+  border: 1px solid black;
+  padding: 15px;
+}
+
+.title-container {
+  border-top: 2px solid var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+
+.title-container > span {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px 5px 10px;
+}
+
+.serie-presentation {
+  background-color: #eeeeee;
+  padding: 15px;
+}
+
+.serie-presentation h2,
+.serie-acteurs h2,
+.serie-images h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.serie-presentation img {
+  display: block;
+  margin: auto;
+  width: 40%;
+  max-height: 60rem;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.serie-presentation > p:first-of-type {
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+.serie-presentation > p:last-of-type {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+  font-style: italic;
+  font-size: 14px;
+  text-indent: 10px;
+}
+
+.serie-information {
+  background-color: #eeeeee;
+  padding: 15px;
+}
+
+.serie-information h3 {
+  color: var(--accent-color);
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.serie-information > p {
+  padding: 10px 0 10px 0;
+}
+
+.serie-acteurs {
+  background-color: white;
+  padding-top: 15px;
+}
+
+.serie-acteurs > h2 {
+  margin-bottom: 10px;
+}
+
+.acteurs-liste > li {
+  text-align: center;
+  background-color: #eeeeee;
+  border-radius: 10px;
+  margin: 5px 0 5px 0;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.acteurs-liste a {
+  display: block;
+  padding: 5px 0 5px 0;
+}
+
+.acteurs-liste > li:hover {
+  background-color: var(--accent-color);
+  color: #eeeeee;
+}
+
+.serie-images article {
+  width: 30%;
+  border: 1px solid black;
+}
+
+.images-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.images-container img {
+  width: 100%;
+  height: 17rem;
+}
+
+.copyright a {
+  color: #fb911f;
+  text-decoration: none;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.copyright a:hover {
+  background-color: blue; /* Change la couleur de fond en bleu */
+  box-shadow: 10px 10px 5px grey; /* Ajoute une ombre au bloc */
+}
+
+@media screen and (max-width: 1280px) {
+  .images-container img {
+    max-height: 150px;
+  }
+}
