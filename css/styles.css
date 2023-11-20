@@ -41,6 +41,7 @@ header > img {
   display: block;
   margin: auto;
   margin-bottom: 15px;
+ 
 }
 
 .container {
@@ -178,5 +179,126 @@ header > img {
 @media screen and (max-width: 1280px) {
   .images-container img {
     max-height: 150px;
+  }
+}
+/* Styles pour les smartphones */
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+    margin: 10px;
+  }
+
+  main {
+    margin: 20px;
+  }
+
+  .container {
+    margin: 10px;
+    padding: 10px;
+  }
+  .serie-presentation img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-height: 60rem;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+
+  /* Ajoutez d'autres styles spécifiques aux smartphones ici */
+}
+/* Styles pour les tablettes */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 16px;
+    margin: 20px;
+  }
+
+  main {
+    margin: 30px;
+  }
+
+  .container {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  /* Ajoutez d'autres styles spécifiques aux tablettes ici */
+}
+/* Styles pour les écrans moyens (laptops, desktops) */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  body {
+    font-size: 18px;
+    margin: 60px;
+  }
+
+  main {
+    margin: 80px;
+  }
+
+  .container {
+    margin: 60px;
+    padding: 20px;
+  }
+
+  /* Ajoutez d'autres styles spécifiques aux écrans moyens ici */
+}
+/* Styles pour les smartphones et tablettes */
+@media screen and (max-width: 1023px) {
+  .serie-images article {
+    width: 100%; /* Utiliser toute la largeur disponible */
+    margin-bottom: 20px; /* Espace entre chaque article */
+  }
+}
+/* Styles pour les smartphones et tablettes */
+@media screen and (max-width: 1023px) {
+  header > img {
+    width: 100%; /* Définir la largeur de l'image à 80% */
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+}
+/* Styles pour les smartphones */
+@media screen and (max-width: 767px) {
+  .acteurs-liste > li {
+    margin: 10px 0; /* Espacement pour les smartphones */
+  }
+  
+  .acteurs-liste a {
+    padding: 10px 0; /* Espacement pour les smartphones */
+  }
+}
+
+/* Styles pour les tablettes et écrans de taille moyenne */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .serie-presentation img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-height: 60rem;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .acteurs-liste > li {
+    text-align: center;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    margin: 5px 0;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    padding: 8px 0; /* Espacement pour les tablettes */
+  }
+  
+  .acteurs-liste a {
+    display: block;
+    padding: 5px 0; /* Espacement pour les tablettes */
+  }
+
+  .acteurs-liste > li:hover {
+    background-color: var(--accent-color);
+    color: #eeeeee;
   }
 }
